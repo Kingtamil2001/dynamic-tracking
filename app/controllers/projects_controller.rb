@@ -7,7 +7,6 @@ class ProjectsController < ApplicationController
 
   end
 
-  private
   def set_project_secret
     @secret_key = params[:id]
     @script_path = if params[:env] == 'production'
